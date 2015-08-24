@@ -1,0 +1,26 @@
+{
+    "cordova-plugin-whitelist": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-whitelist@1"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "org.apache.cordova.device": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.device"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "com.raja.plugins.Authentication": {
+        "source": {
+            "type": "local",
+            "path": "custom_plugins/com.raja.plugins.Authentication"
+        },
+        "is_top_level": true,
+        "variables": {}
+    }
+}

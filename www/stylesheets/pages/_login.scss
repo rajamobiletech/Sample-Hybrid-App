@@ -1,0 +1,148 @@
+#loginBackground, .splash_screen{
+  @include login-background();
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+
+  .cisco_logo_small{
+    width: 90px;
+    height: 50px;
+    background: url("../images/Ciscologo_white.png") no-repeat center center transparent;
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 4;
+    background-size: 100px 60px;
+  }
+
+  #loginScreen {
+    height: 334px;
+    width: 300px;
+    position: absolute;
+    top: -190px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    #ciscoLogo{
+      width: 305px;
+      height: 50px;
+      background: url("../images/cisco_logo_text_old.png") no-repeat center center transparent;
+      background-size: 100% 100%;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+  }
+}
+
+.cisco_logo_grey{
+  background-image: url("../images/Ciscologo_white.png");
+  background-repeat: no-repeat;
+  background-position: 1px center;
+  background-size: 90px 60px;
+  width: 90px;
+  height: 50px;
+  margin: 10px auto 1px;
+}
+
+#language {
+ border-radius: 5px;
+  position: absolute;
+  top: 180px;
+  width:450px;
+
+  br {
+    line-height: 20px;
+  }
+  #chooseLangLabel {
+    font-weight: bold;
+    font-size: 17px;
+    color: white;
+  }
+  #selectLang {
+    width: 150px;
+  }
+}
+
+#loginForm{
+  width: 300px;
+  height: 100px;
+  background: #fff;
+  border-radius: 5px;
+  position: absolute;
+  top: 170px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+
+  .field_container{
+    float: left;
+    width: 100%;
+    padding: 5px 0 10px 0;
+    border-bottom: 1px solid #ccc;
+    &.last {
+      border: 0;
+    }
+    label{
+      float: left;
+      width: auto;
+      font-weight: bold;
+      font-size: 17px;
+      padding: 7px 15px;
+    }
+    #user_name, #password {
+      width: 135px;
+      font-size: 14px;
+      line-height: 1.25;
+      padding: 10px 15px;
+      float: right;
+      margin: 0 12px 0px 0;
+      border: 0;
+      outline: none;
+      text-decoration: none;
+      &:disabled{
+        background: #fff;
+      }
+    }
+  }
+
+  #loginBtn {
+    width: 300px;
+    height: 42px;
+    margin: 25px 0px 0px;
+    line-height: 42px;
+    padding: 0 0px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #d8f7fc;
+    border: 0 none;
+    outline: 0 none;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    &:disabled {
+      background: #999;
+      color: #555;
+      cursor: none;
+    }
+  }
+}
+
+.cisco_text_logo{
+  position: relative;
+  width: 100%;
+  height: 80px;
+  background: url("../images/cisco_logo_text_old.png") no-repeat center center transparent;
+}
+
+

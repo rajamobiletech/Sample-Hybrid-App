@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="com.raja.plugins.Authentication"
+    version="1.0.0">
+    <name>Authentication</name>
+    <description>Run external api calls on Authentication</description>
+    <license>Cisco</license>
+
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="Authentication">
+                <param name="ios-package" value="Authentication" />
+            </feature>
+        </config-file>
+
+        <header-file src="ios/Authentication.h" />
+        <source-file src="ios/Authentication.m" />
+    </platform>
+
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Authentication" >
+                <param name="android-package" value="com.raja.plugins.Authentication"/>
+            </feature>
+        </config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.INTERNET" />
+        </config-file>
+        <source-file src="android/Authentication.java" target-dir="src/com/raja/plugins" />
+    </platform>
+</plugin>

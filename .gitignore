@@ -1,0 +1,38 @@
+# Appcode
+.idea
+
+# Vim
+*.swp
+
+# Our mess
+profile
+*.moved-aside
+.DS_Store
+build
+*.app.dSYM.zip
+*.ipa
+build.out
+test-reports
+local.env
+.rvmrc
+.bundle
+bin
+Pods
+9
+136
+*.perspectivev3
+*.pbxuser
+.DS_Store
+build
+
+#sass stuff
+css
+.sass-cache
+Gemfile.lock
+node_modules
+
+#coverage stuff
+js-cov
+coverage.json
+coverage-report*
+vendor
